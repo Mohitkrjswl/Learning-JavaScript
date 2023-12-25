@@ -13,9 +13,29 @@
 //     console.log("this is function expression");
 
 //  }
-//  word();
-const add= function(x){
-    return x+x;
+// //  word();
+// const add= function(x){
+//     return x+x;
 
-}
-console.log(add(6));
+// }
+// console.log(add(6));
+// Function with a callback
+function greet(name, callback) {
+    console.log("Hello, " + name + "!");
+  
+    // Simulate a task that takes some time (e.g., fetching data)
+    setTimeout(function () {
+      console.log("Task completed!");
+      // Execute the callback function
+      callback();
+    }, 2000); // Simulating a 2-second delay
+  }
+  
+  // Callback function
+  function sayGoodbye() {
+    console.log("Goodbye!");
+  }
+  
+  // Using the greet function with a callback
+  greet("Alice", sayGoodbye);
+  
