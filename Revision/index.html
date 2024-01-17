@@ -24,6 +24,27 @@
 //   console.log(`Namaste ${name} uncle!`);
 // }
 // greeting('xyz')
+//  let product = {
+//   company: 'Levis',
+//   price: 899,
+//   item_name:'T-shirt',
+//  }
+//  console.log(product);
+// console.log(product['company']);
+// console.log(product['price']);
+//   console.log(product['item_name']);
+  let product={
+    company:'h&m',
+    price:2299,
+    'item-name':'sweat-shirt',
+    displayPrice: function(){
+      console.log(`Price of the product is ₹${product.price}`);
+    }
+  };
+  product.displayPrice();
+  let { company,price}=product;
+  console.log(company);
+  console.log(price);
   </script> 
 </body>
 </html>
