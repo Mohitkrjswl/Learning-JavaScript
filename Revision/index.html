@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>returnfunction</title>
+  <title>JSON</title>
 </head>
+<style>
+  /* #my-button{
+    padding: 10px 15px;
+    font-size: larger; */
+  /* } */
+</style>
 <body>
   
- 
+ <!-- <h3 id=greeting></h3>
+ <button id="my-button" onclick="buttonPressed();">0</button>
   <script>
+    let noOfTimesClicked=localStorage.getItem('noOftimesclicked') || 0;
+    function buttonPressed(){
+      let button = document.querySelector('#my-button');
+      noOfTimesClicked++;
+
+      button.innerText=noOfTimesClicked;
+
+    }
   // function determinDriveStatus(){
   //   let age;
   //   if(age=== undefined)
@@ -33,18 +48,34 @@
 // console.log(product['company']);
 // console.log(product['price']);
 //   console.log(product['item_name']);
-  let product={
-    company:'h&m',
-    price:2299,
-    'item-name':'sweat-shirt',
-    displayPrice: function(){
-      console.log(`Price of the product is ₹${product.price}`);
-    }
-  };
-  product.displayPrice();
-  let { company,price}=product;
-  console.log(company);
-  console.log(price);
+  // let product={
+  //   company:'h&m',
+  //   price:2299,
+  //   'item-name':'sweat-shirt',
+  //   displayPrice: function(){
+  //     console.log(`Price of the product is ₹${product.price}`);
+  //   }
+  // };
+  // product.displayPrice();
+  // let { company,price}=product;
+  // console.log(company);
+  // console.log(price);
+  function doGreeting(){  --> 
+    <!-- let date = new Date();
+    //  let hours = date.getHours();
+    let hours=9;
+    let heading = document.querySelector('#greeting');
+    console.log(date);
+    console.log(hours);
+    if( hours>5 && hours<12){
+      heading.innerText= 'Good Morning Everyone ☀ 🌄'
+    } else if (hours>12 && hours<18){
+      heading.innerText='Good Afternoon🌅✨'
+    } else{
+      heading.innerText='Good Night🌃 '
+   }
+  }
+  // doGreeting(); -->
   </script> 
 </body>
 </html>
