@@ -6,7 +6,7 @@ let item={
 
 itemsContainerElement.innerHTML = ` 
 <div class="item-container">
-<img class="item-image" src="1.jpg" alt="item img">
+<img class="item-image" src="image/1.jpg" alt="item img">
 <div class="rating">
     4.5⭐ | 1.4k
 </div>
